@@ -10,7 +10,6 @@ public class Factorial {
         } else if (number > 0) {
             for (int i = 0; i < number; i++) {
                 factorialNumb = factorialNumb * (i + 1);
-                System.out.println(factorialNumb);
             }
         }
         return factorialNumb;
