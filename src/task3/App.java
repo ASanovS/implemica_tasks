@@ -30,9 +30,8 @@ public class App {
         // Casting a factorial value to a string type
         String factorialToString = startValueFactorial.toString();
 
-        // Calculating the length of a string to create an array of Integer
-        System.out.println("String length = " + factorialToString.length());
-        int[] factorialToInt = new int[158];
+        //Initializing an array equal to the length of the string
+        int[] factorialToInt = new int[factorialToString.length()];
 
         // Filling an array with numbers from a string
         for (int i = 0; i < factorialToString.length(); i++) {
