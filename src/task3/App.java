@@ -14,10 +14,11 @@ public class App {
         // Value to find factorial number
         BigInteger startValueFactorial = BigInteger.valueOf(1);
         BigInteger numberOfMultiple = BigInteger.valueOf(1);
-        
+
         // The number whose factorial will be calculated
         BigInteger inputFactorialValue = BigInteger.valueOf(100);
 
+        //calculation of the sum of all numbers of the factorial 100
         while (inputFactorialValue != BigInteger.ZERO) {
             inputFactorialValue = inputFactorialValue.subtract(BigInteger.ONE);
             startValueFactorial = startValueFactorial.multiply(numberOfMultiple);
