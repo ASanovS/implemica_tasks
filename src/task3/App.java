@@ -12,23 +12,19 @@ public class App {
     public static void main(String[] args) {
 
         // Value to find factorial number
-        BigInteger startValueFactorial = BigInteger.valueOf(1);
+        BigInteger factorialValue = BigInteger.valueOf(1);
         BigInteger numberOfMultiple = BigInteger.valueOf(1);
 
-        // The number whose factorial will be calculated
-        BigInteger inputFactorialValue = BigInteger.valueOf(100);
-
         //calculation of the sum of all numbers of the factorial 100
-        while (inputFactorialValue != BigInteger.ZERO) {
-            inputFactorialValue = inputFactorialValue.subtract(BigInteger.ONE);
-            startValueFactorial = startValueFactorial.multiply(numberOfMultiple);
+        for (int i = 0; i < 100; i++) {
+            factorialValue = factorialValue.multiply(numberOfMultiple);
             numberOfMultiple = numberOfMultiple.add(BigInteger.ONE);
         }
 
-        System.out.println("Factorial 100! = " + startValueFactorial);
+        System.out.println("Factorial 100! = " + factorialValue);
 
         // Casting a factorial value to a string type
-        String factorialToString = startValueFactorial.toString();
+        String factorialToString = factorialValue.toString();
 
         //Initializing an array equal to the length of the string
         int[] factorialToInt = new int[factorialToString.length()];
@@ -43,6 +39,7 @@ public class App {
         for (int fi : factorialToInt) {
             sumOfDigits += fi;
         }
+
         System.out.println("Sum of digits factorial = " + sumOfDigits);
     }
 }
