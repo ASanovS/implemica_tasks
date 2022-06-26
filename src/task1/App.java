@@ -39,6 +39,7 @@ public class App {
                     newList.add(temp);
                 }
             }
+            
             current = newList;
             newList = new ArrayList<>();
             count++;
