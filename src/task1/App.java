@@ -17,10 +17,11 @@ public class App {
         int countBrackets;
         while (true) {
             System.out.println("Enter pairs of brackets number");
-            Scanner in = new Scanner(System.in);
-            if (in.hasNextInt()) {
-                countBrackets = in.nextInt();
-                break;
+            try (Scanner input = new Scanner(System.in)) {
+                if (input.hasNextInt()) {
+                    countBrackets = input.nextInt();
+                    break;
+                }
             }
         }
 
